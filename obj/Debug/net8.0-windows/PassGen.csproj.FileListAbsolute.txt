@@ -18,3 +18,10 @@ D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\refint\PassGen.dll
 D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\PassGen.pdb
 D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\PassGen.genruntimeconfig.cache
 D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\ref\PassGen.dll
+D:\C Sharp Progects\PassGen\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\C Sharp Progects\PassGen\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\C Sharp Progects\PassGen\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+D:\C Sharp Progects\PassGen\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+D:\C Sharp Progects\PassGen\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\PassGen.csproj.AssemblyReference.cache
+D:\C Sharp Progects\PassGen\obj\Debug\net8.0-windows\PassGen.csproj.Up2Date
