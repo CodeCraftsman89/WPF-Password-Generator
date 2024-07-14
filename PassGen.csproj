@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="github.png" />
     <None Remove="key_262538.ico" />
+    <None Remove="switch.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="github.png" />
     <Resource Include="key_262538.ico" />
+    <Resource Include="switch.png" />
   </ItemGroup>
 
   <ItemGroup>

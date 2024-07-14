@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
@@ -23,14 +24,17 @@ namespace PassGen
             InitializeComponent();
         }
 
-        private void TxtPass_TextChanged(object sender, TextChangedEventArgs e)
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
 
-        private void GenPassBtn_Click(object sender, RoutedEventArgs e)
+        private void GitHubBtn_Click(object sender, RoutedEventArgs e)
         {
-            TxtPass.Text = PasswordGenerator.Generate();
+            Process.Start(new ProcessStartInfo("https://github.com/CodeCraftsman89")
+            {
+                UseShellExecute = true
+            });
         }
     }
     /// <summary>

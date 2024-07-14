@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PassGen"
         mc:Ignorable="d"
-        Title="Password Generator" Height="600" Width="900" Background="White" Icon="/key_262538.ico">
+        Title="Password Generator" Height="600" Width="900" Background="#FF0B6078" Icon="/key_262538.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -17,6 +17,56 @@
             <RowDefinition Height="75"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock></TextBlock>
+        <TextBlock
+            x:Name="PassGenTxt"
+            Panel.ZIndex="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Cursor="IBeam"
+            FontSize="22">
+            <Run Text="Pass"/><LineBreak/>
+            <Run Text="Gen"/>
+        </TextBlock>
+        <Ellipse 
+            x:Name="PassGenCircle"
+            Panel.ZIndex="1"
+            Fill="#FF198CAC" 
+            Stroke="Black" 
+            OpacityMask="#FF198CAC"
+            Width="70"
+            Height="70" >
+        </Ellipse>
+        <Rectangle 
+            x:Name="LeftUpRect"
+            Fill="#FF063A48">
+        </Rectangle>
+        <Rectangle 
+            x:Name="LeftDownRect"
+            Grid.Column="0"
+            Grid.Row="1"
+            Fill="#FF063A48">
+        </Rectangle>
+        <Button 
+            x:Name="ExitBtn"
+            Grid.Row="1"
+            Width="70"
+            Height="70"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom" Margin="0,0,0,20" Click="ExitBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/switch.png" TileMode="None" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <Button 
+            x:Name="GitHubBtn"
+            Grid.Row="1"
+            Width="70"
+            Height="70"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom" Margin="0,0,0,110" Click="GitHubBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/github.png" TileMode="None" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
