@@ -11,6 +11,8 @@
   <ItemGroup>
     <None Remove="github.png" />
     <None Remove="key_262538.ico" />
+    <None Remove="passwordtxtbox.jpg" />
+    <None Remove="passwordtxtbox.png" />
     <None Remove="switch.png" />
   </ItemGroup>
 
@@ -23,6 +25,8 @@
   <ItemGroup>
     <Resource Include="github.png" />
     <Resource Include="key_262538.ico" />
+    <Resource Include="passwordtxtbox.jpg" />
+    <Resource Include="passwordtxtbox.png" />
     <Resource Include="switch.png" />
   </ItemGroup>
 
