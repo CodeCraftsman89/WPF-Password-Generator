@@ -36,6 +36,26 @@ namespace PassGen
                 UseShellExecute = true
             });
         }
+
+        private void TxtPass_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TxtPass_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TxtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void GenPassBtn_Click(object sender, RoutedEventArgs e)
+        {
+            TxtPass.Text = PasswordGenerator.Generate();
+        }
     }
     /// <summary>
     /// Base64Url encoder/decoder

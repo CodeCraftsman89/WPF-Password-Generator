@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Buttons.jpg" />
     <None Remove="github.png" />
     <None Remove="key_262538.ico" />
     <None Remove="passwordtxtbox.jpg" />
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Buttons.jpg" />
     <Resource Include="github.png" />
     <Resource Include="key_262538.ico" />
     <Resource Include="passwordtxtbox.jpg" />

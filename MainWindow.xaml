@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PassGen"
         mc:Ignorable="d"
-        Title="Password Generator" Height="600" Width="900" Background="#FF0B6078" Icon="/key_262538.ico">
+        Title="Password Generator" Height="350" Width="900" Background="#FF0B6078" Icon="/key_262538.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -23,7 +23,7 @@
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Cursor="IBeam"
-            FontSize="22">
+            FontSize="22" FontWeight="Bold">
             <Run Text="Pass"/><LineBreak/>
             <Run Text="Gen"/>
         </TextBlock>
@@ -80,7 +80,6 @@
             VerticalAlignment="Center"
             Text="Password" 
             TextWrapping="Wrap"
-            TextChanged="TxtPass_TextChanged" 
             TextAlignment="Left"
             MaxLength="20"
             FontSize="32"
@@ -89,7 +88,7 @@
             Cursor="IBeam"
             BorderBrush="{x:Null}"  
             Background="#00000000" 
-            SelectionBrush="{x:Null}">
+            SelectionBrush="{x:Null}" TextChanged="TxtPass_TextChanged_1" FontWeight="Bold">
         </TextBox>
         <Rectangle 
             x:Name="TxtPassRect"
@@ -126,7 +125,6 @@
             VerticalAlignment="Center"
             Text="Name" 
             TextWrapping="Wrap"
-            TextChanged="TxtPass_TextChanged" 
             TextAlignment="Left"
             MaxLength="20"
             FontSize="32"
@@ -135,8 +133,56 @@
             Cursor="IBeam"
             BorderBrush="{x:Null}"  
             Background="#00000000" 
-            SelectionBrush="{x:Null}">
+            SelectionBrush="{x:Null}" TextChanged="TxtName_TextChanged" FontWeight="Bold">
         </TextBox>
+        <Button 
+            x:Name="GenPassBtn"
+            Grid.Column="1"
+            Grid.Row="1"
+            Content="Generate"
+            FontSize="32"
+            VerticalAlignment="Top"
+            Width="380"
+            Height="100" 
+            Margin="0,20,0,0" 
+            FontWeight="Bold" Click="GenPassBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Buttons.jpg"/>
+            </Button.Background>
+
+        </Button>
+        <Button 
+            x:Name="SavePassBtn"
+            Grid.Column="2"
+            Grid.Row="1"
+            Content="Save"
+            FontSize="32"
+            VerticalAlignment="Top"
+            Width="380"
+            Height="100" 
+            Margin="0,20,0,0" 
+            FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Buttons.jpg"/>
+            </Button.Background>
+
+        </Button>
+        <Button 
+            x:Name="HistoryBtn"
+            Grid.Column="1"
+            Grid.Row="2"
+            Content="History"
+            FontSize="32"
+            VerticalAlignment="Top"
+            Width="380"
+            Height="100" 
+            Margin="0,140,0,0" 
+            FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Buttons.jpg"/>
+            </Button.Background>
+
+        </Button>
 
 
     </Grid>
