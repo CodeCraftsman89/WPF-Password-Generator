@@ -108,7 +108,7 @@
             Grid.Row="0"
             Grid.Column="2"
             Height="55"  
-            Width="380" Cursor="IBeam">
+            Width="380" Cursor="IBeam" Visibility="Hidden">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF054848" Offset="0.99"/>
@@ -133,7 +133,7 @@
             Cursor="IBeam"
             BorderBrush="{x:Null}"  
             Background="#00000000" 
-            SelectionBrush="{x:Null}" TextChanged="TxtName_TextChanged" FontWeight="Bold">
+            SelectionBrush="{x:Null}" TextChanged="TxtName_TextChanged" FontWeight="Bold" Visibility="Hidden">
         </TextBox>
         <Button 
             x:Name="GenPassBtn"
@@ -161,7 +161,7 @@
             Width="380"
             Height="100" 
             Margin="0,20,0,0" 
-            FontWeight="Bold">
+            FontWeight="Bold" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush ImageSource="/Buttons.jpg"/>
             </Button.Background>
@@ -177,7 +177,7 @@
             Width="380"
             Height="100" 
             Margin="0,140,0,0" 
-            FontWeight="Bold">
+            FontWeight="Bold" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush ImageSource="/Buttons.jpg"/>
             </Button.Background>
